@@ -12,8 +12,11 @@
 </head>
 <body>
 
-<!-- HOW TO ADD AN ENTRY PERMANENTLY: copy any <article class="entry"> block below,
-     paste it at the top of #diaryList, change the date chip + data-ts + title + body. -->
+<!-- HOW TO ADD AN ENTRY PERMANENTLY:
+     Copy any <article class="entry"> block below,
+     paste it at the top of #diaryList,
+     then change the date chip + data-ts + title + body. -->
+
 
 <div class="site">
 
@@ -35,7 +38,6 @@
     <a class="tab" href="index.html"><b>HOME</b><i>ホーム</i></a>
     <a class="tab" href="art.html"><b>ART</b><i>えがき</i></a>
     <a class="tab" href="music.html"><b>MUSIC</b><i>おんがく</i></a>
-    <a class="tab" href="progress.html"><b>PROGRESS</b><i>せいちょう</i></a>
     <a class="tab on" aria-current="page" href="diary.html"><b>DIARY</b><i>にっき</i></a>
   </nav>
 
@@ -46,30 +48,18 @@
 
     <div class="stack" style="margin-top:14px">
 
-      <section class="panel pa-pink">
-        <div class="phead"><span class="ico">✍</span><h2>NEW ENTRY</h2><span class="jp">しんきろく</span></div>
-        <div class="pbody">
-          <form id="dForm" novalidate>
-            <div class="dform-row">
-              <input type="date" id="dDate" aria-label="entry date">
-              <input type="text" id="dTitle" placeholder="title — e.g. doodle #022 posted!!" maxlength="80" required>
-              <textarea id="dBody" placeholder="what happened this week? drawing, music, snacks, existential dread…" required></textarea>
-              <div style="display:flex;align-items:center;gap:12px">
-                <button type="submit" class="btn btn-pink">★ POST IT!!</button>
-                <span class="fmsg" id="dMsg" aria-live="polite"></span>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
 
-      <section class="panel pa-yellow" style="margin-bottom:14px">
-        <div class="phead"><span class="ico">☰</span><h2>HOW TO POST (FOR ME)</h2><span class="jp">ほうしきりかた</span></div>
-        <div class="pbody" style="font-size:.85rem;color:var(--dim)">
-          <b style="color:var(--text)">quick:</b> use the form above — entries save in this browser and reappear at the top next visit.<br>
-          <b style="color:var(--text)">permanent:</b> edit <code style="color:var(--yellow)">diary.html</code> directly — copy any entry block below, change the date + text, paste it above the others. that's how every old website was maintained anyway.
-        </div>
-      </section>
+
+<aside class="howto" aria-label="How to add an entry">
+  <strong>ADDING ENTRIES</strong>
+  <p>
+    Entries are permanent HTML, not saved by the browser.  
+    To add one, edit <code>diary.html</code> directly:
+    copy any <code>&lt;article class="entry"&gt;</code> block,
+    paste it at the top of <code>#diaryList</code>,
+    then change the date chip, <code>data-ts</code>, title, and body.
+  </p>
+</aside>
 
       <div class="dstats">
         <span class="dstat"><b id="stTotal">5</b> entries total</span>
