@@ -97,6 +97,14 @@ button{font-family:inherit;cursor:pointer}
 @keyframes mq{to{transform:translateX(-50%)}}
 .mq-inner span{font-family:'DotGothic16',monospace;color:var(--yellow);font-size:.9rem;padding-right:4.5rem;white-space:nowrap}
 
+/* Keep EST. 2026 and UPDATED WEEKLY fully visible */
+.banner .est,
+.banner .updated-chip {
+  top: 12px !important;
+  transform: none !important;
+}
+
+
 /* ============ NAV (real links) ============ */
 .tabbar{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
 .tab{
