@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIARY / 日記 — SideQuestRoy</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⭐</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOW TO ADD AN ENTRY PERMANENTLY: copy any <article class="entry"> block below,
+     paste it at the top of #diaryList, change the date chip + data-ts + title + body. -->
+
+<div class="site">
+
+  <header class="banner">
+    <span class="corner c-tl spin">✦</span>
+    <span class="corner c-br spin" style="animation-direction:reverse">✦</span>
+    <div class="updated-chip"><span class="blink">★</span> UPDATED WEEKLY!!</div>
+    <div class="est">EST. 2019</div>
+    <h1 class="logo">SIDE<span class="q">QUEST</span>ROY</h1>
+    <p class="tagline">〜 sidequestroy の個人ホームページ 〜 a hole in the internet, lovingly cluttered</p>
+  </header>
+
+  <div class="newsbar"><div class="marquee"><div class="mq-inner">
+    <span>★ DIARY PAGE: new entry most sundays ★ post your own note with the form above ★ entries posted via the form save in this browser ★ edit diary.html directly for permanent entries ★</span>
+    <span aria-hidden="true">★ DIARY PAGE: new entry most sundays ★ post your own note with the form above ★ entries posted via the form save in this browser ★ edit diary.html directly for permanent entries ★</span>
+  </div></div></div>
+
+  <nav class="tabbar" aria-label="site pages">
+    <a class="tab" href="index.html"><b>HOME</b><i>ホーム</i></a>
+    <a class="tab" href="art.html"><b>ART</b><i>えがき</i></a>
+    <a class="tab" href="music.html"><b>MUSIC</b><i>おんがく</i></a>
+    <a class="tab" href="progress.html"><b>PROGRESS</b><i>せいちょう</i></a>
+    <a class="tab on" aria-current="page" href="diary.html"><b>DIARY</b><i>にっき</i></a>
+  </nav>
+
+  <main class="main">
+    <p class="crumb"><a href="index.html">HOME</a> » DIARY » にっき</p>
+    <h1 class="ptitle">DIARY / 日記</h1>
+    <p class="psub">weekly-ish posts. post your own entry below — it saves right in this browser.</p>
+
+    <div class="stack" style="margin-top:14px">
+
+      <section class="panel pa-pink">
+        <div class="phead"><span class="ico">✍</span><h2>NEW ENTRY</h2><span class="jp">しんきろく</span></div>
+        <div class="pbody">
+          <form id="dForm" novalidate>
+            <div class="dform-row">
+              <input type="date" id="dDate" aria-label="entry date">
+              <input type="text" id="dTitle" placeholder="title — e.g. doodle #022 posted!!" maxlength="80" required>
+              <textarea id="dBody" placeholder="what happened this week? drawing, music, snacks, existential dread…" required></textarea>
+              <div style="display:flex;align-items:center;gap:12px">
+                <button type="submit" class="btn btn-pink">★ POST IT!!</button>
+                <span class="fmsg" id="dMsg" aria-live="polite"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="panel pa-yellow" style="margin-bottom:14px">
+        <div class="phead"><span class="ico">☰</span><h2>HOW TO POST (FOR ME)</h2><span class="jp">ほうしきりかた</span></div>
+        <div class="pbody" style="font-size:.85rem;color:var(--dim)">
+          <b style="color:var(--text)">quick:</b> use the form above — entries save in this browser and reappear at the top next visit.<br>
+          <b style="color:var(--text)">permanent:</b> edit <code style="color:var(--yellow)">diary.html</code> directly — copy any entry block below, change the date + text, paste it above the others. that's how every old website was maintained anyway.
+        </div>
+      </section>
+
+      <div class="dstats">
+        <span class="dstat"><b id="stTotal">5</b> entries total</span>
+        <span class="dstat"><b id="stMonth">1</b> this month</span>
+        <span class="dstat"><b>≈1</b>/week goal — mostly keeping it</span>
+      </div>
+
+      <div id="diaryList">
+
+        <article class="entry" data-ts="2025-07-06">
+          <div class="entry-head"><span class="dchip">2025/07/06 [Sun]</span><b>doodle #021 posted + site relaunch</b><span class="new-badge blink">NEW!</span></div>
+          <div class="entry-body">big week. doodle #021 is up in the art gallery (the coffee ghost finally got a body), and i rebuilt this whole site as actual separate pages with real links between them — the old version was one big file pretending to be a website, and it showed. it finally behaves like the 90s taught us: click a tab, get a page.</div>
+        </article>
+
+        <article class="entry" data-ts="2025-06-29">
+          <div class="entry-head"><span class="dchip">2025/06/29 [Sun]</span><b>finished "rainy save point"</b></div>
+          <div class="entry-body">it took way too long but the ending finally breathes. lesson of the week: rests are a feature, not a failure — cut 30% of the notes and it got better immediately. it's playable on the music page now. slow track, headphones, maybe tea.</div>
+        </article>
+
+        <article class="entry" data-ts="2025-06-22">
+          <div class="entry-head"><span class="dchip">2025/06/22 [Sun]</span><b>redraw challenge day 12</b></div>
+          <div class="entry-body">pulled out my 2019 sketchbook to redraw one old piece side by side (the blob cat, obviously). the lines are less defensive now — shoulders stopped being ellipses i was apologizing for. added a before/after slider to the art page so you can watch it happen.</div>
+        </article>
+
+        <article class="entry" data-ts="2025-06-15">
+          <div class="entry-head"><span class="dchip">2025/06/15 [Sun]</span><b>palette purge!!</b></div>
+          <div class="entry-body">deleted 40 unused swatches and felt a small violent joy. keeping 18 colors now, including two that exist only so i feel "artistic". rule going forward: if you didn't use it in 3 months, it goes to the attic file.</div>
+        </article>
+
+        <article class="entry" data-ts="2025-06-08">
+          <div class="entry-head"><span class="dchip">2025/06/08 [Sun]</span><b>played my first demo for a friend</b></div>
+          <div class="entry-body">made someone listen to the 2019 track on purpose. we both winced at second four. they said "you can actually hear your taste now", which is the nicest way i know to say progress. kept it in the tracklist anyway — labeled, preserved, slightly ashamed.</div>
+        </article>
+
+      </div><!-- /diaryList -->
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="newsbar"><div class="marquee"><div class="mq-inner">
+      <span>THANKS FOR READING MY INTERNET DIARY!! ★ next entry sunday-ish ★ the guestbook on HOME is open ★ がんばって!!</span>
+      <span aria-hidden="true">THANKS FOR READING MY INTERNET DIARY!! ★ next entry sunday-ish ★ the guestbook on HOME is open ★ がんばって!!</span>
+    </div></div></div>
+    <div class="foot-row">
+      <span>© 2019–<span id="yr">2025</span> SideQuestRoy · no rights reserved, take a star ✦</span>
+      <button class="top-btn" id="topBtn">▲ back to top</button>
+    </div>
+  </footer>
+
+</div><!-- /site -->
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ART / 絵 — SideQuestRoy</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⭐</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site">
+
+  <header class="banner">
+    <span class="corner c-tl spin">✦</span>
+    <span class="corner c-br spin" style="animation-direction:reverse">✦</span>
+    <div class="updated-chip"><span class="blink">★</span> UPDATED WEEKLY!!</div>
+    <div class="est">EST. 2019</div>
+    <h1 class="logo">SIDE<span class="q">QUEST</span>ROY</h1>
+    <p class="tagline">〜 sidequestroy の個人ホームページ 〜 a hole in the internet, lovingly cluttered</p>
+  </header>
+
+  <div class="newsbar"><div class="marquee"><div class="mq-inner">
+    <span>★ ART PAGE: drag the before/after slider ★ click any artwork to enlarge it ★ doodle #021 is in there ★ the coffee ghost finally has a body ★</span>
+    <span aria-hidden="true">★ ART PAGE: drag the before/after slider ★ click any artwork to enlarge it ★ doodle #021 is in there ★ the coffee ghost finally has a body ★</span>
+  </div></div></div>
+
+  <nav class="tabbar" aria-label="site pages">
+    <a class="tab" href="index.html"><b>HOME</b><i>ホーム</i></a>
+    <a class="tab on" aria-current="page" href="art.html"><b>ART</b><i>えがき</i></a>
+    <a class="tab" href="music.html"><b>MUSIC</b><i>おんがく</i></a>
+    <a class="tab" href="progress.html"><b>PROGRESS</b><i>せいちょう</i></a>
+    <a class="tab" href="diary.html"><b>DIARY</b><i>にっき</i></a>
+  </nav>
+
+  <main class="main">
+    <p class="crumb"><a href="index.html">HOME</a> » ART » えがき</p>
+    <h1 class="ptitle">ART / 絵</h1>
+    <p class="psub">progression &amp; gallery — from blob cats to things i can look at calmly.</p>
+
+    <div class="stack" style="margin-top:14px">
+
+      <section class="panel pa-pink">
+        <div class="phead"><span class="ico">⇆</span><h2>PROGRESSION: DRAG THE SLIDER</h2><span class="jp">まえ / あと</span></div>
+        <div class="pbody">
+          <div class="cmp" id="cmpBox">
+            <img src="https://picsum.photos/seed/roy-draw-now/900/640" alt="recent drawing style (placeholder)">
+            <img src="https://picsum.photos/seed/roy-draw-2019/900/640?grayscale&blur=1" alt="drawing from 2019, grayscale for effect (placeholder)" style="clip-path:inset(0 calc(100% - var(--split)) 0 0)">
+            <button class="handle" id="cmpHandle" role="slider" aria-label="compare before and after" aria-valuemin="5" aria-valuemax="95" aria-valuenow="55"></button>
+            <span class="lbl l-old">2019 (rough)</span><span class="lbl l-new">NOW</span>
+          </div>
+          <p class="cmp-cap">same pose, different years — well, same <i>spirit</i>. drag the yellow bar ◀ ▶ · keyboard arrows work too.</p>
+        </div>
+      </section>
+
+      <section class="panel pa-yellow">
+        <div class="phead"><span class="ico">✎</span><h2>GALLERY — SELECTED WORKS</h2><span class="jp">がれりー</span></div>
+        <div class="pbody gal-grid" id="galGrid">
+          <figure class="gcard rv" data-seed="roy-dragon-oc" data-title="dragon OC 'Grimm' — final pass" data-meta="character · 2025"><img src="https://picsum.photos/seed/roy-dragon-oc/400/300" alt=""><figcaption class="gc-t"><b>dragon OC "Grimm"</b><span>CHARACTER · 2025</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-pip-turnaround" data-title="OC 'Pip' turnaround sheet" data-meta="character · 2024"><img src="https://picsum.photos/seed/roy-pip-turnaround/400/300" alt=""><figcaption class="gc-t"><b>OC "Pip" turnaround</b><span>CHARACTER · 2024</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-city-2am" data-title="city at 2am — background study" data-meta="background · 2025"><img src="https://picsum.photos/seed/roy-city-2am/400/300" alt=""><figcaption class="gc-t"><b>city at 2am</b><span>BG STUDY · 2025</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-coffee-ghost" data-title="doodle #017 — the coffee ghost" data-meta="doodle · 2023"><img src="https://picsum.photos/seed/roy-coffee-ghost/400/300?grayscale" alt=""><figcaption class="gc-t"><b>doodle #017: coffee ghost</b><span>DOODLE · 2023</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-stickersheet-v2" data-title="stickersheet v2 (print-ready!)" data-meta="print · 2024"><img src="https://picsum.photos/seed/roy-stickersheet-v2/400/300" alt=""><figcaption class="gc-t"><b>stickersheet v2 <span class="new-badge blink">NEW!</span></b><span>PRINT · 2024</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-momo-sheet" data-title="character sheet: Momo" data-meta="character · 2023"><img src="https://picsum.photos/seed/roy-momo-sheet/400/300" alt=""><figcaption class="gc-t"><b>character sheet: Momo</b><span>CHARACTER · 2023</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-zine-cover" data-title="mini zine cover draft" data-meta="print · 2025"><img src="https://picsum.photos/seed/roy-zine-cover/400/300" alt=""><figcaption class="gc-t"><b>zine #2 cover <span class="tagchip">WIP</span></b><span>PRINT · 2025</span></figcaption></figure>
+          <figure class="gcard rv" data-seed="roy-slime-pixel" data-title="pixel slime (16×16, yes really)" data-meta="pixel · 2024"><img src="https://picsum.photos/seed/roy-slime-pixel/400/300" alt=""><figcaption class="gc-t"><b>pixel slime, 16×16</b><span>PIXEL · 2024</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="panel pa-pink">
+        <div class="phead"><span class="ico">✚</span><h2>TOOLS I USE</h2><span class="jp">つーるず</span></div>
+        <div class="pbody">
+          <ul class="tools-list">
+            <li>clip studio paint</li><li>procreate (for chaos)</li><li>a 0.3 pen i'm too attached to</li><li>free paper, used up daily</li><li>"the good laptop" (music side)</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="newsbar"><div class="marquee"><div class="mq-inner">
+      <span>THANKS FOR VISITING!! ★ next: the MUSIC page has playable tracks ★ drawings keep getting less scary ★ がんばって!!</span>
+      <span aria-hidden="true">THANKS FOR VISITING!! ★ next: the MUSIC page has playable tracks ★ drawings keep getting less scary ★ がんばって!!</span>
+    </div></div></div>
+    <div class="foot-row">
+      <span>© 2019–<span id="yr">2025</span> SideQuestRoy · no rights reserved, take a star ✦</span>
+      <button class="top-btn" id="topBtn">▲ back to top</button>
+    </div>
+  </footer>
+
+</div><!-- /site -->
+
+<!-- lightbox (art page only) -->
+<div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="artwork viewer">
+  <div class="lb-box">
+    <button class="lb-btn" id="lbClose" aria-label="close">✕</button>
+    <button class="lb-btn" id="lbPrev" aria-label="previous artwork">‹</button>
+    <button class="lb-btn" id="lbNext" aria-label="next artwork">›</button>
+    <img id="lbImg" src="" alt="">
+    <div class="lb-cap"><b id="lbCap"></b><span id="lbMeta"></span></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js" defer></script>
+</body>
+</html>

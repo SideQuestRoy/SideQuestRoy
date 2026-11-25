@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUSIC / 音楽 — SideQuestRoy</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⭐</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site">
+
+  <header class="banner">
+    <span class="corner c-tl spin">✦</span>
+    <span class="corner c-br spin" style="animation-direction:reverse">✦</span>
+    <div class="updated-chip"><span class="blink">★</span> UPDATED WEEKLY!!</div>
+    <div class="est">EST. 2019</div>
+    <h1 class="logo">SIDE<span class="q">QUEST</span>ROY</h1>
+    <p class="tagline">〜 sidequestroy の個人ホームページ 〜 a hole in the internet, lovingly cluttered</p>
+  </header>
+
+  <div class="newsbar"><div class="marquee"><div class="mq-inner">
+    <span>★ MUSIC PAGE: click any track to play it right here ★ "rainy save point" is new ★ track #4 is the embarrassing one — play it on purpose ★ volume is polite, promise ★</span>
+    <span aria-hidden="true">★ MUSIC PAGE: click any track to play it right here ★ "rainy save point" is new ★ track #4 is the embarrassing one — play it on purpose ★ volume is polite, promise ★</span>
+  </div></div></div>
+
+  <nav class="tabbar" aria-label="site pages">
+    <a class="tab" href="index.html"><b>HOME</b><i>ホーム</i></a>
+    <a class="tab" href="art.html"><b>ART</b><i>えがき</i></a>
+    <a class="tab on" aria-current="page" href="music.html"><b>MUSIC</b><i>おんがく</i></a>
+    <a class="tab" href="progress.html"><b>PROGRESS</b><i>せいちょう</i></a>
+    <a class="tab" href="diary.html"><b>DIARY</b><i>にっき</i></a>
+  </nav>
+
+  <main class="main">
+    <p class="crumb"><a href="index.html">HOME</a> » MUSIC » おんがく</p>
+    <h1 class="ptitle">MUSIC / 音楽</h1>
+    <p class="psub">bedroom chiptunes. click a track — these are generated live in your browser.</p>
+
+    <div class="stack" style="margin-top:14px">
+
+      <section class="panel pa-yellow player-panel">
+        <div class="phead"><span class="ico">♪</span><h2>NOW PLAYING CONSOLE</h2><span class="jp">プレイヤー</span></div>
+        <div class="pbody">
+          <div class="np-row">
+            <button id="bigPlay" class="btn btn-pink">▶ PLAY / ■ STOP</button>
+            <span id="npTitle">— nothing yet, pick a track below —</span>
+            <span id="npTime"></span>
+          </div>
+          <div class="prog-outer"><div id="progFill"></div></div>
+          <div class="eq" id="eq"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </section>
+
+      <section class="panel pa-pink">
+        <div class="phead"><span class="ico">▸</span><h2>TRACKLIST — CLICK TO PLAY</h2><span class="jp">トラックスリスト</span></div>
+        <div class="pbody" id="tracklist" style="padding-top:6px;padding-bottom:6px">
+          <div class="trow" data-id="menu-loop-v3" tabindex="0"><span class="play btn-mini">►</span><span class="tt"><b>1. menu loop v3</b><em>bright &amp; bouncy — main menu energy</em></span><span class="ty">2024</span><span class="tl">~0:04</span></div>
+          <div class="trow" data-id="side-quest-theme" tabindex="0"><span class="play btn-mini">►</span><span class="tt"><b>2. side quest theme</b><em>the hero walk. slightly too heroic.</em></span><span class="ty">2023</span><span class="tl">~0:03</span></div>
+          <div class="trow" data-id="rainy-save-point" tabindex="0"><span class="play btn-mini">►</span><span class="tt"><b>3. rainy save point <span class="new-badge blink">NEW!</span></b><em>slow one. rests did the work.</em></span><span class="ty">2025</span><span class="tl">~0:13</span></div>
+          <div class="trow" data-id="first-demo" tabindex="0"><span class="play btn-mini">►</span><span class="tt"><b>4. first demo (the embarrassing one)</b><em>one square wave of pure courage.</em></span><span class="ty">2019</span><span class="tl">~0:05</span></div>
+        </div>
+      </section>
+
+      <section class="panel pa-yellow">
+        <div class="phead"><span class="ico">▲</span><h2>SOUND PROGRESSION — 2019 vs NOW</h2><span class="jp">せいちょうきろく</span></div>
+        <div class="pbody">
+          <p style="font-size:.88rem">Back in 2019 the whole setup was one square wave, a laptop mic for "ambience", and zero mixing. That era's masterpiece is track #4 below — play it on purpose and feel the cringe.</p>
+          <p style="font-size:.88rem;margin-top:8px">Now there are layers (bass! rests! actual dynamics), a tempo i committed to, and mixes where i didn't turn anything up until my neighbor knocked. Progress is slow but it <i>is</i> progress.</p>
+          <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+            <button class="btn playlink" data-id="first-demo">▶ hear the 2019 one (brave)</button>
+            <button class="btn playlink" data-id="rainy-save-point">▶ hear what i make now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel pa-purple">
+        <div class="phead"><span class="ico">⬇</span><h2>DOWNLOADS (NOT REALLY)</h2><span class="jp">ダウンロード</span></div>
+        <div class="pbody" style="font-size:.85rem;color:var(--dim)">
+          <button class="btn dl-fake">⬇ sidequestroy_vol1.zip (demo only)</button>
+          <p style="margin-top:9px">real files are in progress. for now the player above is the official release. you're welcome.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="newsbar"><div class="marquee"><div class="mq-inner">
+      <span>THANKS FOR VISITING!! ★ if a track got stuck in your head, the guestbook on HOME is waiting ★ がんばって!!</span>
+      <span aria-hidden="true">THANKS FOR VISITING!! ★ if a track got stuck in your head, the guestbook on HOME is waiting ★ がんばって!!</span>
+    </div></div></div>
+    <div class="foot-row">
+      <span>© 2019–<span id="yr">2025</span> SideQuestRoy · no rights reserved, take a star ✦</span>
+      <button class="top-btn" id="topBtn">▲ back to top</button>
+    </div>
+  </footer>
+
+</div><!-- /site -->
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js" defer></script>
+</body>
+</html>
